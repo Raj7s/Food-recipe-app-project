@@ -1,0 +1,4 @@
+[[redirects]]
+from = "/*"
+to = "INDEX.HTML"
+status = 200
