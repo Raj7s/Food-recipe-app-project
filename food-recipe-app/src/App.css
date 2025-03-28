@@ -1,0 +1,145 @@
+/* src/App.css */
+
+/* General app styling */
+.app {
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9; /* Light background color */
+  padding: 20px;
+  color: #333; /* Default text color */
+}
+
+/* Header styling */
+h1 {
+  color: #4CAF50; /* Green header color */
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Search form styling */
+.search-form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.search-form input {
+  padding: 10px;
+  font-size: 16px;
+  width: 300px;
+  border: 2px solid #4CAF50; /* Green border for the input field */
+  border-radius: 5px;
+  margin-right: 10px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+/* Input field focus effect */
+.search-form input:focus {
+  border-color: #007BFF; /* Blue border when focused */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Blue glow on focus */
+}
+
+.search-form button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4CAF50; /* Green button background */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-form button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+/* Recipe list styling */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin: 10px 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+li a {
+  text-decoration: none;
+  color: #007BFF; /* Blue color for links */
+  transition: color 0.3s ease;
+}
+
+li a:hover {
+  color: #004085; /* Darker blue on hover */
+  text-decoration: underline;
+}
+
+/* Recipe details styling */
+.recipe-detail {
+  margin-top: 40px;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.recipe-detail h2 {
+  font-size: 2rem;
+  color: #4CAF50; /* Green color for recipe title */
+  margin-bottom: 10px;
+}
+
+.recipe-detail img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+.recipe-detail h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.recipe-detail ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.recipe-detail ul li {
+  background-color: #f8f8f8;
+  padding: 8px;
+  margin: 5px 0;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+/* Adding some animation to the recipe details */
+.recipe-detail h3,
+.recipe-detail p {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+.recipe-detail h3 {
+  animation-delay: 0.5s;
+}
+
+.recipe-detail p {
+  animation-delay: 1s;
+}
+
+/* Keyframe animation for fade-in effect */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
